@@ -1,4 +1,4 @@
-import Profile from 'components/user';
+import Profile from 'components/user.js';
 import user from './user.json';
 
 export default function App() {
@@ -12,5 +12,5 @@ export default function App() {
         stats={user.stats}
       />
     </div>
-  );
+  )
 }

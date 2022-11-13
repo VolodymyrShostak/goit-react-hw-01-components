@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { App } from './App';
 import './index.css';
 
+ReactDOM.render(<App />, document.querySelector('#root'));
+
 // ReactDOM.createRoot(document.getElementById('root')).render(
 //   <React.StrictMode>
 //     <App />
@@ -17,4 +19,4 @@ import './index.css';
 //
 //   document.querySelector('#root')
 // );
-ReactDOM.render(<App />, document.querySelector('#root'));
+
