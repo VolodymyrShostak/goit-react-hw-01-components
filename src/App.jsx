@@ -1,7 +1,8 @@
 import Profile from 'components/user.js';
 import user from './user.json';
 import Statistics from 'components/statistics.js';
-import data from './data.json';
+import stats from './data.json';
+// import upload from '@testing-library/user-event/dist/upload';
 
 export const App = () => {
   return (
@@ -13,14 +14,8 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics
-        title={data.title}
-        stats={data.stats}
-        // docxPercentage={data.stats.docxPercentage}
-        // mp3Percentage={data.stats.mp3Percentage}
-        // pdfPercentage={data.stats.pdfPercentage}
-        // mp4Percentage={data.stats.mp4Percentage}
-      />
+
+      <Statistics title={'upload stats'} stats={stats} />
     </div>
   );
 };
