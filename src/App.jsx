@@ -2,7 +2,7 @@ import Profile from 'components/user.js';
 import user from './user.json';
 import Statistics from 'components/statistics.js';
 import stats from './data.json';
-// import upload from '@testing-library/user-event/dist/upload';
+import friends from './friends.json';
 
 export const App = () => {
   return (
@@ -14,8 +14,8 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-
       <Statistics title={'upload stats'} stats={stats} />
+      <FriendList friends={friends} />;
     </div>
   );
 };
