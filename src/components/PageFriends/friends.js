@@ -6,7 +6,9 @@ export default function FriendList({ friends }) {
     <ul className={css.friendsList}>
       {friends.map(({ avatar, name, isOnline, id }) => (
         <li className={css.item} key={id}>
-          <span className={css.status}>{isOnline}</span>
+          <span className={`${css.status} ${isOnline ? css.isActive : ''}`}>
+            {isOnline}
+          </span>
           <img
             className={css.avatar}
             src={avatar}
