@@ -1,0 +1,47 @@
+.table {
+  margin: 20px auto 20px;
+  padding: 0;
+  width: 300px;
+  display: flex;
+  border: 1px solid black;
+}
+
+.th {
+  font-weight: normal;
+  color: #039;
+  border-bottom: 1px dashed #69c;
+  padding: 12px 17px;
+}
+.td {
+  color: #669;
+  padding: 7px 17px;
+}
+.tr:hover td {
+  background: #ccddff;
+}
+
+/* export const TableHeaderRow = styled.tr`
+  width: 126px;
+  height: 45px;
+  background-color: ${p => p.theme.colors.tableTitleColor};
+`;
+
+export const TableTitle = styled.th`
+  font-size: ${p => p.theme.fontSizes.m};
+  color: ${p => p.theme.colors.white};
+  font-weight: ${p => p.theme.fontWeights.normal};
+`;
+
+export const TransactionRow = styled.tr`
+  height: 35px;
+  text-align: center;
+  background-color: ${p => p.theme.colors.white};
+  :nth-of-type(2n) {
+    background-color: ${p => p.theme.colors.tableRowSecondColor};
+  }
+`;
+
+export const TransactionDetails = styled.td`
+  font-size: ${p => p.theme.fontSizes.m};
+  color: ${p => p.theme.colors.text};
+`; */

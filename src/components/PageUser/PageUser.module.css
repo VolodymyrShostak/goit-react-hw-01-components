@@ -7,7 +7,7 @@
   width: 300px;
   height: 470px;
   border-radius: 10px;
-  border: 2px solid grey;
+  border: 2px solid #aabcfe;
 }
 .description {
   padding: 30px;
@@ -49,6 +49,10 @@
   text-align: center;
   justify-content: center;
   gap: 12px;
+  border: 1px solid #aabcfe;
+  align-items: center;
+  /* border: ${p => p.theme.borders.normal} ${p => p.theme.colors.borderColor}; */
+  /* background-color: ${p => p.theme.colors.backgroundColorCard}; */
 }
 .label {
   color: dimgrey;
@@ -56,3 +60,34 @@
 .quantity {
   font-weight: 600;
 }
+/* 
+
+export const UserTitle = styled.p`
+  font-size: ${p => p.theme.fontSizes.xm};
+  font-weight: ${p => p.theme.fontWeights.middle};
+  margin-bottom: ${p => p.theme.space[0]}px;
+`;
+
+export const UserInfo = styled.p`
+  margin-bottom: ${p => p.theme.space[0]}px;
+  font-size: ${p => p.theme.fontSizes.m};
+  color: ${p => p.theme.colors.cardSecondTextColor};
+`;
+
+export const StatsList = styled.ul`
+  display: flex;
+  padding: ${p => p.theme.space[0]}px;
+  list-style: none;
+  margin-bottom: ${p => p.theme.space[0]}px;
+`;
+
+export const StatsItem = styled.li`
+  
+`;
+
+export const StatsNumbers = styled.span`
+  font-size: ${p => p.theme.fontSizes.m};
+  font-weight: ${p => p.theme.fontWeights.bold};
+  margin-top: 5px;
+  color: ${p => p.theme.colors.text};
+`; */
